@@ -1,0 +1,76 @@
+\documentclass[12pt]{beamer}
+
+%%%%%%%% tema e cor %%%%%%%%
+\mode<presentation> {
+\usetheme{Madrid}
+%\usecolortheme{albatross}
+}
+
+\input{config.tex}
+
+%%%%%%%% titulo e subtitulo %%%%%%%%
+\title[Improvements in PM\tsub{2.5} Exposure Modeling]{Improvements in High-Resolution PM\tsub{2.5} Exposure Modeling} 
+
+%%%%%%%% nome dos autores %%%%%%%%
+\author[Bi, J.]{Jianzhao Bi \\ \vspace{0.3cm} \sl{Department of Environmental Health \\ Rollins School of Public Health, Emory University}} 
+
+\begin{document}
+
+%%%%%%%% slides %%%%%%%%
+\begin{frame}{}
+    \textbf{\Large Jianzhao Bi}
+    \vspace{0.5cm}
+    \begin{itemize}
+        \item \textbf{Emory University}, \textsl{Atlanta, GA, (expected May 2020)}
+        \begin{itemize}
+            \item 4\textsuperscript{th} year Ph.D. candidate in Environmental Health Sciences
+            \item \textbf{Major fields}: air pollution exposure modeling and health analysis
+            \item \textbf{Advisor}: Dr. Yang Liu
+        \end{itemize}
+        \item \textbf{Tsinghua University}, \textsl{China, (July 2016)}
+        \begin{itemize}
+            \item Master of Science in Atmospheric Science 
+            \item Thesis: NO\textsubscript{x} emission retrieval and lifetime estimation in European metropolitan areas
+        \end{itemize}
+        \item \textbf{Wuhan University}, \textsl{China, (June 2014)}
+        \begin{itemize}
+            \item Bachelor of Engineering in Remote Sensing Science and Technology
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Air Pollution Exposure Assessment}
+Developing statistical models to integrate multi-source data (satellite remote sensing, low-cost sensor, etc.) into spatiotemporally high-resolution air pollution exposure modeling.
+\vspace{0.5cm}
+    \begin{itemize}
+        \item \textbf{Satellite data gap-filling}: Estimating non-random missing satellite data (aerosol optical depth, AOD) caused by cloud and snow cover
+        \item \textbf{Low-cost sensor data}: Incorporating volunteer-generated low-cost sensor data to high-resolution PM\textsubscript{2.5} exposure assessment
+        \item \textbf{Transfer learning} \textsl{(Ongoing)}:  Exploring new machine learning methods to transfer high-quality exposure models built in data-rich regions to data-poor regions (\textit{e.g.}, developing countries)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Air Pollution Health Analysis}
+    \begin{itemize}
+        \item Evaluating \textbf{temporal variation in PM\textsubscript{2.5}-cardiorespiratory morbidity associations} in relation to policy implementation in Los Angeles, CA.
+        \item Analyzing \textbf{acute renal outcomes} and short-term exposure to air pollution based on emergency department visits data in Atlanta, GA.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+
+% Background
+\section{PM\tsub{2.5} Exposure Assessment}
+\input{sections/background.tex}
+\section{Improvement 1: Satellite AOD Gap-Filling}
+\input{sections/aim1.tex}
+\section{Improvement 2: Integration of Low-Cost Sensor Data}
+\input{sections/aim2.tex}
+\input{sections/appendix.tex}
+\end{document}
+
